@@ -1,0 +1,238 @@
+body {
+  font-family: 'Crimson Text', sans-serif; 
+  font-style: normal;
+  background-color: white; 
+  margin: 0; 
+}
+
+header {
+    color: white; 
+    background-image: url(https://cdn-img-f.facciabuco.com/220/agtzp2j1su-bellissimo-tramonto-in-riva-al-mare-cosa-prende-un-tramonto-per-due-possibilmente_b.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+  
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+}
+
+header #overlay{
+    background-color: rgba(0,0,0,.3);
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+ header nav {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    font-size: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#links a {
+  font-size: 15px;
+  margin: 15px;
+  
+}
+
+#logo {
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.button,
+header h1 strong,
+#links {
+  font-family: 'Open Sans', sans-serif; 
+  font-style: normal; 
+  letter-spacing: 2px;
+  text-transform: uppercase;    
+}
+
+a { 
+  cursor: pointer;
+}
+
+a.button {
+  padding: 10px 15px;
+  border: 2px solid white;
+  border-radius: 100px;
+}
+
+a.button:hover {
+  background-color: white;
+  color: black;
+}
+
+header::before {
+  content: ''; 
+  position: absolute;
+  top: 0; 
+  left: 0;
+  bottom: 10px;
+  right: 0;
+  background-color: rgba(29, 29, 29, 0.129);
+}
+
+header  h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+    max-width: 780px;
+    text-align: center;
+    z-index: 1;
+    }
+
+header h1 em {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+header h1 strong {
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+ 
+header h1 a {
+  font-size: 15px;
+}
+
+h1 a.button {
+ border: 0;
+ background-color: rgb(167, 75, 26);
+}
+
+h1 a.button:hover {
+    background-color: rgba(167, 75, 26, 0.75);
+    color: inherit;
+}
+
+div#autore img{
+    height: 100px;
+    width:100px;
+    border: 1px solid white;
+}
+
+div#autore{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: rgb(51,51,51);
+    line-height: 24px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    top: -50px;   
+}
+
+div#autore span#name{
+    font-weight: bold; 
+}
+
+div#autore span#update{
+    font-style: italic; 
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 10px;
+}
+
+div#autore img{
+    width: 100px;
+    border-radius: 100px;
+    border:1px solid white;   
+}
+
+.flex-item{
+margin: 60px 0px 120px 0px;
+display: flex;
+justify-content: center;
+}
+
+div.contenuto{
+    margin-left: 40px;
+    width: 66.67%;
+}
+
+section img{
+    width: 100%;
+}
+
+div.numbers{
+    color: rgb(0,0,0,0.25);
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+}
+
+.titolo{
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    color: rgb(51,51,51);
+
+}
+
+.sottotitolo{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 18px;
+    color: #42b4d6;
+}
+
+p.descrizione{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(51,51,51);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p.conclusioni{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(51,51,51);
+    font-weight: bold;
+    margin-bottom:20px;
+}
+
+footer {
+    background-color: black;
+    color: lightgray;
+    text-align: center;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 500px){
+    div.contenuto{
+        margin-left: 20px;
+        width: 66.67%;
+    }
+    p.descrizione{
+        font-family: 'Source Sans Pro',sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: rgb(51,51,51);
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+    .flex-item{
+        margin: 30px 0px 60px 0px;
+        display: flex;
+        justify-content: center;
+        }
